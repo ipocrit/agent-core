@@ -1,0 +1,20 @@
+[project]
+name = "agent-core"
+version = "0.1.0"
+description = "可复用的企业 Agent 底座：通用能力在 core/，行业差异在 domains/"
+requires-python = ">=3.12"
+dependencies = [
+    "langgraph>=1.2.16",
+    "langgraph-checkpoint-sqlite>=3.1.2",
+    "mcp[cli]>=2.3.0",
+    "openai>=3.35.1",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["domains", "tests"]

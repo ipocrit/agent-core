@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+*.egg-info
+.venv
+.pytest_cache/
+
+# 运行时生成：演示数据库、检查点、日志
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+logs/
+
+# 密钥
+.env
+.env.*
